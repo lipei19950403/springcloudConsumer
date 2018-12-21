@@ -13,7 +13,7 @@ public class MovieController {
 	
 	@GetMapping("/customer/test")
 	public String send(){
-		return this.template.getForObject("http://localhost:8082/provide/test", String.class);
+		return this.template.getForObject("http://cloudprivade/SolrSearch", String.class);
 	}
 	
 }
